@@ -15,28 +15,29 @@ function portofolio() {
                     <img src={IMG1} alt="DataBase Project"/>
                 </div>
                 <h3>DataBase Project</h3>
-                <a href="https://github.com/Popa24/Baze-de-date" className="btn">Source code</a>
+               <div className="portofolio_item-cta"> <a href="https://github.com/Popa24/Baze-de-date" target="_blank" className="btn">Source code</a></div>
             </article>
+
              <article className="portofolio_item">
                  <div className="portofolio_item-image">
                      <img src={IMG2} alt="Hackthon Project"/>
                  </div>
                  <h3>Hackthon project</h3>
-                 <a href="https://github.com/AndreiZ0R/OnlyBuilds-Web" className="btn">Source code</a>
+                 <div className="portofolio_item-cta">  <a href="https://github.com/AndreiZ0R/OnlyBuilds-Web" target="_blank" className="btn">Source code</a></div>
              </article>
              <article className="portofolio_item">
                  <div className="portofolio_item-image">
                      <img src={IMG3} alt="Hackthon Project"/>
                  </div>
                  <h3>Hackthon Project</h3>
-                 <a href="https://github.com/Popa24/web-eTracker" className="btn">Source code</a>
+                 <div className="portofolio_item-cta"> <a href="https://github.com/Popa24/web-eTracker" target="_blank" className="btn">Source code</a></div>
              </article>
              <article className="portofolio_item">
                  <div className="portofolio_item-image">
                      <img src={IMG4} alt="Portofolio Project"/>
                  </div>
                  <h3>Portofolio Project</h3>
-                 <a href="https://github.com/Popa24/Baze-de-date" className="btn">Source code</a>
+                 <div className="portofolio_item-cta"> <a href="https://github.com/Popa24/portofolio_website" target="_blank" className="btn">Source code</a></div>
              </article>
          </div>
      </section>
