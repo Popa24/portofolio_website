@@ -18,18 +18,43 @@ import Portofolio from "./components/portofolio/portofolio";
 import Testimonials from "./components/testimonials/testimonials";
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
+import { useState, useEffect } from "react";
+import RingLoader from 'react-spinners/RingLoader'
+
+
+const override: CSSProperties = {
+  display: "block",
+  margin: "0 auto",
+  borderColor: "red",
+};
 function App() {
+  let [loading, setLoading] = useState(false);
+  useEffect(()=>{
+    setLoading(true);
+    setTimeout(()=>{
+    setLoading(false);
+    },3000)
+  },[])
   return (
+
     <>
-    <Header/>
-      <Nav/>
-      <About/>
-      <Experience/>
+      {loading ?<div className="App"> <RingLoader
+              color=" #4db5ff"
+              align-items
+              size={150}
+              speedMultiplier={0.5}
+          />  </div>
+      : <div><Header/>
+        <Nav/>
+        <About/>
+        <Experience/>
       {/*<Services/>*/}
-      <Portofolio/>
+        <Portofolio/>
       {/*<Testimonials/>*/}
-      <Contact/>
-      <Footer/>
+        <Contact/>
+        <Footer/></div>
+      }
+
     </>
   );
 }

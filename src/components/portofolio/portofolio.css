@@ -26,6 +26,14 @@
     gap: 1rem;
     margin-bottom: 1rem;
 }
+.portofolio_item-two_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
 /* =======  MEDIA QUERY TABLETS======*/
 
 @media screen and (max-width: 1024px){
