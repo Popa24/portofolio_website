@@ -5,12 +5,21 @@ import IMG2 from '../../assets/OnlyBuilds.png'
 import IMG3 from '../../assets/Etracker.png'
 import IMG4 from '../../assets/Portofolio Website.png'
 import IMG5 from '../../assets/Chat_gpt.png'
+import IMG6 from '../../assets/Menu-item.png'
 function portofolio() {
     return (
      <section id="portofolio">
          <h5>My Recent Work</h5>
          <h2>Portofolio</h2>
          <div className="container portofolio_container">
+             <article className="portofolio_item">
+                 <div className="portofolio_item-image">
+                     <img src={IMG6} alt="Restaurant menu"/>
+                 </div>
+                 <h3>Menu UI after Figma Design</h3>
+                 <div className="portofolio_item-two_buttons"> <div className="portofolio_item-cta"> <a  rel="noreferrer" href="https://github.com/Popa24/project_modern_ui_ux_restaurant" target="_blank" className="btn">Source code</a></div>
+                     <div className="portofolio_item-cta"> <a rel="noreferrer"  href="https://gericht-figma-design.netlify.app" target="_blank" className="btn btn-primary">Live Demo</a></div></div>
+             </article>
              <article className="portofolio_item">
                  <div className="portofolio_item-image">
                      <img src={IMG5} alt="Ui after figma design"/>
